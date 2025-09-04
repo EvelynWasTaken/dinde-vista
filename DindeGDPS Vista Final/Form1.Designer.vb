@@ -40,6 +40,10 @@ Partial Class Form1
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BugReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WebsiteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LinksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ComingSoonToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SocialsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ComingSoonToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.inGameLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.gdLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
@@ -78,11 +82,11 @@ Partial Class Form1
         'versionLabel
         '
         Me.versionLabel.AutoSize = True
-        Me.versionLabel.Location = New System.Drawing.Point(110, 421)
+        Me.versionLabel.Location = New System.Drawing.Point(107, 421)
         Me.versionLabel.Name = "versionLabel"
         Me.versionLabel.Size = New System.Drawing.Size(397, 13)
         Me.versionLabel.TabIndex = 3
-        Me.versionLabel.Text = "DindeGDPS Legacy Launcher v1.1 - Launcher by Zhevelyn - DindeGDPS by Jean"
+        Me.versionLabel.Text = "DindeGDPS Legacy Launcher v1.2 - Launcher by Zhevelyn - DindeGDPS by Jean"
         '
         'newsLabel
         '
@@ -136,7 +140,7 @@ Partial Class Form1
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GDPSToolStripMenuItem, Me.SpecialToolStripMenuItem, Me.HelpToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GDPSToolStripMenuItem, Me.SpecialToolStripMenuItem, Me.LinksToolStripMenuItem, Me.SocialsToolStripMenuItem, Me.HelpToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(624, 24)
@@ -153,7 +157,7 @@ Partial Class Form1
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(93, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'SpecialToolStripMenuItem
@@ -187,6 +191,32 @@ Partial Class Form1
         Me.WebsiteToolStripMenuItem.Name = "WebsiteToolStripMenuItem"
         Me.WebsiteToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.WebsiteToolStripMenuItem.Text = "Website"
+        '
+        'LinksToolStripMenuItem
+        '
+        Me.LinksToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ComingSoonToolStripMenuItem})
+        Me.LinksToolStripMenuItem.Name = "LinksToolStripMenuItem"
+        Me.LinksToolStripMenuItem.Size = New System.Drawing.Size(46, 20)
+        Me.LinksToolStripMenuItem.Text = "Links"
+        '
+        'ComingSoonToolStripMenuItem
+        '
+        Me.ComingSoonToolStripMenuItem.Name = "ComingSoonToolStripMenuItem"
+        Me.ComingSoonToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ComingSoonToolStripMenuItem.Text = "Coming Soon..."
+        '
+        'SocialsToolStripMenuItem
+        '
+        Me.SocialsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ComingSoonToolStripMenuItem1})
+        Me.SocialsToolStripMenuItem.Name = "SocialsToolStripMenuItem"
+        Me.SocialsToolStripMenuItem.Size = New System.Drawing.Size(55, 20)
+        Me.SocialsToolStripMenuItem.Text = "Socials"
+        '
+        'ComingSoonToolStripMenuItem1
+        '
+        Me.ComingSoonToolStripMenuItem1.Name = "ComingSoonToolStripMenuItem1"
+        Me.ComingSoonToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.ComingSoonToolStripMenuItem1.Text = "Coming Soon..."
         '
         'Form1
         '
@@ -236,4 +266,8 @@ Partial Class Form1
     Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents BugReportToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents WebsiteToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents LinksToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ComingSoonToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SocialsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ComingSoonToolStripMenuItem1 As ToolStripMenuItem
 End Class
